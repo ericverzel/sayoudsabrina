@@ -114,6 +114,10 @@ figcaption {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .8), hsla(0, 0%, 100%, .8)), url('../images/woma.jpeg');
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .8), hsla(0, 0%, 100%, .8)), url('../images/woma.jpeg');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
 }
 
 .wrapper-title {
@@ -650,8 +654,8 @@ figcaption {
 }
 
 .wrapper.center {
-  padding-right: 5vw;
-  padding-left: 5vw;
+  padding-right: 0vw;
+  padding-left: 0vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -692,6 +696,7 @@ figcaption {
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .2);
 }
 
 .div-block-3 {
@@ -821,8 +826,7 @@ figcaption {
 
 .wrapper-info.about {
   width: 100%;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding: 10vh 5vw 5vh;
   border-bottom: 1px none #e4e4e4;
 }
 
@@ -1577,8 +1581,7 @@ figcaption {
   position: relative;
   display: block;
   width: 60%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 80px auto 60px;
   padding: 100px 50px 0px;
   background-color: hsla(0, 0%, 95%, .17);
   box-shadow: 0 1px 29px 0 rgba(0, 0, 0, .2);
@@ -1617,7 +1620,8 @@ figcaption {
 }
 
 .heading-7 {
-  color: #881600;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: #000;
 }
 
 .slider {
@@ -1650,13 +1654,15 @@ figcaption {
 }
 
 .email-biz {
+  color: #3c5261;
   text-align: center;
 }
 
 .heading-chocolate {
-  color: #f17f42;
+  color: #000;
   font-size: 26px;
   line-height: 35px;
+  text-decoration: none;
 }
 
 .tab-link {
@@ -1665,21 +1671,23 @@ figcaption {
   box-shadow: none;
   -webkit-transition-property: none;
   transition-property: none;
-  color: #9b9b9b;
+  color: hsla(0, 0%, 100%, .8);
   font-weight: 300;
 }
 
 .tab-link:hover {
   border-bottom-style: none;
   box-shadow: none;
+  color: #fff;
 }
 
 .tab-link.w--current {
-  border-right: 2px solid #fff;
-  border-bottom: 1px solid rgba(51, 51, 51, .32);
-  border-left: 2px solid #fff;
+  border-right: 2px none #fff;
+  border-bottom: 2px solid hsla(0, 0%, 100%, .75);
+  border-left: 2px none #fff;
   background-color: hsla(0, 0%, 61%, 0);
-  color: #000;
+  color: #fff;
+  font-weight: 400;
 }
 
 .tab-link.w--current:hover {
@@ -1689,8 +1697,9 @@ figcaption {
 .tabs-menu {
   display: block;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
   margin-left: auto;
+  color: #fff;
   text-align: center;
 }
 
@@ -1700,13 +1709,15 @@ figcaption {
 
 .heading-8 {
   margin-top: 50px;
-  margin-bottom: 15px;
-  color: #000;
+  margin-bottom: 40px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: #fff;
   text-align: center;
 }
 
 .heading-9 {
   margin-bottom: 50px;
+  color: #ce6d39;
   text-align: left;
 }
 
@@ -1717,12 +1728,50 @@ figcaption {
 }
 
 .tabs-p {
+  color: #dfdfdf;
   text-align: center;
 }
 
 .tabs-content {
   padding-right: 60px;
   padding-left: 60px;
+}
+
+.pour-qui-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #000;
+  background-image: -webkit-linear-gradient(45deg, rgba(0, 64, 136, .98), rgba(246, 134, 87, .86)), url('../images/woma.jpeg');
+  background-image: linear-gradient(45deg, rgba(0, 64, 136, .98), rgba(246, 134, 87, .86)), url('../images/woma.jpeg');
+  background-position: 0px 0px, 50% 0px;
+  background-size: auto, cover;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, fixed;
+  box-shadow: 0 -4px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.bold-text {
+  color: #3c5261;
+}
+
+.bold-text-2 {
+  color: #3c5261;
+}
+
+.italic-text {
+  color: #3c5261;
+}
+
+.italic-text-2 {
+  color: #3c5261;
+}
+
+.italic-text-3 {
+  color: #3c5261;
+}
+
+.bold-text-3 {
+  color: #3c5261;
 }
 
 html.w-mod-js *[data-ix="load-up"] {
@@ -1929,8 +1978,8 @@ html.w-mod-js *[data-ix="load-up"] {
     padding-left: 0px;
   }
   .wrapper.center {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   ._w-title {
     margin-bottom: 5vh;
@@ -2008,6 +2057,10 @@ html.w-mod-js *[data-ix="load-up"] {
   .tabs-content {
     padding-right: 0px;
     padding-left: 0px;
+  }
+  .pour-qui-wrapper {
+    padding-right: 5vw;
+    padding-left: 5vw;
   }
 }
 
@@ -2238,6 +2291,9 @@ html.w-mod-js *[data-ix="load-up"] {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .heading-7 {
+    color: #000;
+  }
   .tabs-menu {
     margin-bottom: 40px;
   }
@@ -2251,6 +2307,9 @@ html.w-mod-js *[data-ix="load-up"] {
   .tabs-content {
     padding-right: 0px;
     padding-left: 0px;
+  }
+  .pour-qui-wrapper {
+    background-position: 0px 0px, -113px 50%;
   }
 }
 
