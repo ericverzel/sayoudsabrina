@@ -1733,7 +1733,6 @@ figcaption {
 .heading-8 {
   margin-top: 50px;
   margin-bottom: 70px;
-  padding-left: 98px;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   color: #fff;
   font-size: 36px;
@@ -1768,6 +1767,8 @@ figcaption {
 }
 
 .tabs-p.align-left {
+  overflow: scroll;
+  height: 415px;
   text-align: left;
 }
 
